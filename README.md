@@ -16,6 +16,8 @@ Please contact the Red Hat Marketplace onboarding team with the following detail
 - A description explaining the significance the of the metric and what is being measured
 - The type of metric governing the way it is recorded and processed, This is either `cumulative` or `current`
 
+You can look at the [metricsDefinition.json](metricsDictionary.json) for examples.
+
 #### Cumulative metrics
 
 Cumulative metrics are those that will keep increasing in value. For example, "Total service calls" is a value that is always cumulative and can only keep increasing. Note that the reported usage value is a lifetime total value and does **NOT** represent the metered usage for a time window. Each time a smaple is measured, the value will be either the same or higher than the previously measured value and never less than the previously sampled value.
