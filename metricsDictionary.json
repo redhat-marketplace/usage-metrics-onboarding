@@ -1,0 +1,20 @@
+{
+  "metrics": [
+    {
+      "metricId": "ACTIVE_USER",
+      "singularName": "User",
+      "pluralName": "Users",
+      "suffix": "users",
+      "description": "Number of active users.",
+      "type": "current"
+    },
+    {
+      "metricId": "API_CALLS_MILLION",
+      "singularName": "API call",
+      "pluralName": "API calls",
+      "suffix": "millions of API calls",
+      "description": "Number of API calls made.",
+      "type": "cumulative"
+    }
+  ]
+}
