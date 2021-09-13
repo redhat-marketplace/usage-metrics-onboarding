@@ -1,20 +1,31 @@
 {
   "metrics": [
     {
+      "metricId": "VIRTUAL_PROCESSOR_CORE",
+      "singularName": "Virtual processor core",
+      "pluralName": "Virtual processor cores",
+      "abbreviation": "VPC",
+      "suffix": "cores",
+      "description": "Number of Virtual processor cores.",
+      "aggregationType": "current"
+    },
+    {
       "metricId": "ACTIVE_USER",
-      "singularName": "User",
-      "pluralName": "Users",
+      "singularName": "Active user",
+      "pluralName": "Active users",
+      "abbreviation": "AU",
       "suffix": "users",
       "description": "Number of active users.",
-      "type": "current"
+      "aggregationType": "current"
     },
     {
       "metricId": "API_CALLS_MILLION",
       "singularName": "API call",
       "pluralName": "API calls",
+      "abbreviation": "ACM",
       "suffix": "millions of API calls",
       "description": "Number of API calls made.",
-      "type": "cumulative"
+      "aggregationType": "cumulative"
     }
   ]
 }
