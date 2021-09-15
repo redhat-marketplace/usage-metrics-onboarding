@@ -1,6 +1,8 @@
 {
   "metrics": [
     {
+      "group": "123.licensing.ibm.com",
+      "kind": "IBMLicensing",
       "metricId": "VIRTUAL_PROCESSOR_CORE",
       "singularName": "Virtual processor core",
       "pluralName": "Virtual processor cores",
@@ -10,6 +12,19 @@
       "aggregationType": "current"
     },
     {
+      "group": "456.licensing.ibm.com",
+      "kind": "IBMLicensing",
+      "metricId": "VIRTUAL_PROCESSOR_CORE",
+      "singularName": "Virtual processor core",
+      "pluralName": "Virtual processor cores",
+      "abbreviation": "VPC",
+      "suffix": "cores",
+      "description": "Number of Virtual processor cores.",
+      "aggregationType": "current"
+    },
+    {
+      "group": "456.licensing.ibm.com",
+      "kind": "IBMLicensing",
       "metricId": "ACTIVE_USER",
       "singularName": "Active user",
       "pluralName": "Active users",
@@ -19,6 +34,8 @@
       "aggregationType": "current"
     },
     {
+      "group": "456.licensing.ibm.com",
+      "kind": "IBMLicensing",
       "metricId": "API_CALLS_MILLION",
       "singularName": "API call",
       "pluralName": "API calls",
