@@ -19,7 +19,7 @@ Please contact the Red Hat Marketplace onboarding team with the following detail
 - The `description` explaining the significance the of the metric and what is being measured
 - The `aggregationType` of metric governing the way it is recorded and processed, This is either `cumulative` or `current`
 
-You can look at the [metricsDefinition.json](metricsDictionary.json) for examples.
+You can look at the [metricsDictionary.json](123.licensing.ibm.com/IBMLicensing/metricsDictionary.json) for examples.
 
 #### Cumulative metrics
 
