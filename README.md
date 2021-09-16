@@ -9,12 +9,15 @@ Adoption (value) metrics are a way to describe the productive use of the deploye
 ### Adding new metrics
 
 Please contact the Red Hat Marketplace onboarding team with the following details
+- The `group` which is defined for the operator
+- The `kind` which is defined for the operator
 - The `metricId` which Programmatically and uniquely identifies the metric (e.g. API_CALLS_MILLION)
-- The text to use displaying a singular value
-- The text to use displaying a plural value
-- Suffix text following a displayed value
-- A description explaining the significance the of the metric and what is being measured
-- The type of metric governing the way it is recorded and processed, This is either `cumulative` or `current`
+- The `singularName` to use displaying a singular value
+- The `pluralName` to use displaying a plural value
+- The `abbreviation` for a metric
+- The `suffix` text following a displayed value
+- The `description` explaining the significance the of the metric and what is being measured
+- The `aggregationType` of metric governing the way it is recorded and processed, This is either `cumulative` or `current`
 
 You can look at the [metricsDefinition.json](metricsDictionary.json) for examples.
 
