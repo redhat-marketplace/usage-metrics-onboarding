@@ -1,0 +1,35 @@
+{
+  "group": "123.licensing.ibm.com",
+  "kind": "IBMLicensing",
+  "rhmProducutId": "1234",
+  "ibmProducutId": "1234",
+  "metrics": [
+    {
+      "metricId": "VIRTUAL_PROCESSOR_CORE",
+      "singularName": "Virtual processor core",
+      "pluralName": "Virtual processor cores",
+      "abbreviation": "VPC",
+      "suffix": "cores",
+      "description": "Number of Virtual processor cores.",
+      "aggregationType": "current"
+    },
+    {
+      "metricId": "ACTIVE_USER",
+      "singularName": "Active user",
+      "pluralName": "Active users",
+      "abbreviation": "AU",
+      "suffix": "users",
+      "description": "Number of active users.",
+      "aggregationType": "current"
+    },
+    {
+      "metricId": "API_CALLS_MILLION",
+      "singularName": "API call",
+      "pluralName": "API calls",
+      "abbreviation": "ACM",
+      "suffix": "millions of API calls",
+      "description": "Number of API calls made.",
+      "aggregationType": "cumulative"
+    }
+  ]
+}
