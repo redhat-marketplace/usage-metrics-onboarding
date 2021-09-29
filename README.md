@@ -11,8 +11,10 @@ Adoption (value) metrics are a way to describe the productive use of the deploye
 Please contact the Red Hat Marketplace onboarding team with the following details
 - The `group` which is defined for the operator
 - The `kind` which is defined for the operator
+- The Id of the product in the Red Hat Marketplace if available
+- The Id of the product registered with IBM if available
 - The `metricId` which Programmatically and uniquely identifies the metric (e.g. API_CALLS_MILLION)
-- The `singularName` to use displaying a singular value
+- The `name` to use displaying a singular value
 - The `pluralName` to use displaying a plural value
 - The `abbreviation` for a metric
 - The `suffix` text following a displayed value
