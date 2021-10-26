@@ -28,16 +28,55 @@ Adoption metrics provide various statistics of how a product is being used by cu
 - Improve quality and user experience
 - Identify popular and unpoplar features
 
-**TODO**: Provide a couple of examples of adoption metrics here
+**TODO**: Provide a couple of generic examples of adoption metrics here. Don't name products
 
 ## Exposing adoption metrics
-### Architecture
-**TODO**: Put in arch. diagram here
-
+### Architecture and components
 <img src="RHM Metering Architecture.png" width="512"/>
 
+The components involved are the **Product** itself deployed by a customer to a cluster. As this product is used, it collects various relevant statistics that are exposed as adoption metrics on an API. **Prometheus**(give link) regularly calls that API to fetch data and saves it within it's database on the cluster. The **Red Hat Marketplace Operator**(give link) queries for that data from Prometheus using a configured query and schedule(link to meter defs below). Then a report of metric data is created and sent to the **Red Hat Marketplace** to process and present to customers(give RHM link).
 ### Concepts
-### Scrape points
+#### Scrape points
+A scrape point is an API provided by a product where Prometheus regularly invokes to fetch metric data. A product may any kind of metric in general but for adoption metrics to be compatible with the Red Hat Marketplace, there are a few conventions and specific fields to be followed. Prometheus documentation(give link) explains in more detail about how to expose a scrape point and the structure of the data that should be exposed there. The schema of the scrape point specific to adoption metrics follows this pattern
+```
+ADOPTION_METRIC_NAME{
+
+metricType="adoption",
+aggregationType=[OPTIONAL, Either current or cumulative],
+
+metricId=[adoption_metric_codename],
+metricDisplayName=[OPTIONAL, display name of the metrics],
+metricAbbreviation=[OPTIONAL, display abbreviation of the metrics],
+
+[any other additional parameters]
+
+}[METRIC_VALUE]
+```
+
+This is an example
+```bash
+api_calls_total{
+
+metricType="adoption",
+metricId="API_CALLS"
+
+} 10000
+```
+
+Another example that includes optional fields
+```bash
+active_users{
+
+metricType="adoption",
+aggregationType="current"
+metricId="ACTIVE_USERS"
+metricDisplayName="Number of currently active users",
+metricAbbreviation="AU"
+
+
+} 107
+```
+
 ### Meter definitions
 ### Metrics dictionary
 
@@ -45,9 +84,20 @@ Adoption metrics provide various statistics of how a product is being used by cu
 
 
 
-and optimize their time on focusing on what customers really want and use.
 
 
 
-- License metrics are used to track the usage of a product against a fixed contracted capacity. An example would be that a customer purchases a database software and the contract allows
-- Billable metrics are those used to generate an invoice at the end of the month. The more of the product you use, the more that the invoice will be and billable metrics are used to track this form of usage. A generic example may be the number of API calls made in the month, where each 1000 API calls adds a certain charge to the invoice.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
