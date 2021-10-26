@@ -33,6 +33,9 @@ Adoption metrics provide various statistics of how a product is being used by cu
 ## Exposing adoption metrics
 ### Architecture
 **TODO**: Put in arch. diagram here
+
+<img src="RHM Metering Architecture.png" width="512"/>
+
 ### Concepts
 ### Scrape points
 ### Meter definitions
