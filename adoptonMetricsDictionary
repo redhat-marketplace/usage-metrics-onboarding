@@ -7,7 +7,7 @@
         "abbreviation": "VPC",
         "suffix": "cores",
         "description": "Number of Virtual processor cores.",
-        "aggregationType": "current"
+        "aggregationType": "hwm"
       },
       {
         "metricId": "ACTIVE_USER",
