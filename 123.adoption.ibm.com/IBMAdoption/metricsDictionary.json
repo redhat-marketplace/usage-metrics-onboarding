@@ -1,0 +1,35 @@
+{
+  "group": "123.adoption.ibm.com",
+  "kind": "IBMAdoption",
+  "rhmProducutId": "rhm1234",
+  "ibmProducutId": "ibm1234",
+  "metrics": [
+    {
+      "metricId": "VIRTUAL_PROCESSOR_CORE",
+      "name": "Virtual processor core",
+      "pluralName": "Virtual processor cores",
+      "abbreviation": "VPC",
+      "suffix": "cores",
+      "description": "Number of Virtual processor cores.",
+      "aggregationType": "current"
+    },
+    {
+      "metricId": "ACTIVE_USER",
+      "name": "Active user",
+      "pluralName": "Active users",
+      "abbreviation": "AU",
+      "suffix": "users",
+      "description": "Number of active users.",
+      "aggregationType": "current"
+    },
+    {
+      "metricId": "API_CALLS_MILLION",
+      "name": "API call",
+      "pluralName": "API calls",
+      "abbreviation": "ACM",
+      "suffix": "millions of API calls",
+      "description": "Number of API calls made.",
+      "aggregationType": "cumulative"
+    }
+  ]
+}
