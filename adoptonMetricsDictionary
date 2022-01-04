@@ -7,7 +7,7 @@
         "abbreviation": "VPC",
         "suffix": "cores",
         "description": "Number of Virtual processor cores.",
-        "aggregationType": "highWaterMark"
+        "aggregationType": "highWatermark"
       },
       {
         "metricId": "ACTIVE_USER",
