@@ -1,8 +1,8 @@
 {
   "group": "123.adoption.ibm.com",
   "kind": "IBMAdoption",
-  "rhmProducutId": "rhm1234",
-  "ibmProducutId": "ibm1234",
+  "rhmProductId": "rhm1234",
+  "ibmProductId": "ibm1234",
   "metrics": [
     {
       "metricId": "VIRTUAL_PROCESSOR_CORE",
