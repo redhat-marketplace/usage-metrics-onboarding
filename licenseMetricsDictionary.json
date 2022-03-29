@@ -341,10 +341,6 @@
             "name": "Managed Virtual Network Device"
         },
         {
-            "metricId": "MANAGED_VIRTUAL_SERVER",
-            "name": "Managed Virtual Server"
-        },
-        {
             "metricId": "MILLION_OF_SERVICE_UNIT_PER_HOURS",
             "name": "Millions of Service Units per Hour"
         },
