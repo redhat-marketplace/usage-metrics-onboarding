@@ -1,0 +1,17 @@
+{
+    "group": "c8b82d189e7545f0892db9ef2731b90d.adoption.ibm.com",
+    "kind": "IBMAdoption",
+    "rhmProductId": "e6f38aadd6308f85d9920257556f2435",
+    "ibmProductId": "c8b82d189e7545f0892db9ef2731b90d",
+    "metrics": [
+      {
+        "metricId": "ACTIVE_USER",
+        "name": "Active user",
+        "pluralName": "Active users",
+        "abbreviation": "AU",
+        "suffix": "users",
+        "description": "Number of active users.",
+        "aggregationType": "current"
+      }
+    ]
+  }
