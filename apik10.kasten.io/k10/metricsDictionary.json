@@ -1,0 +1,16 @@
+{
+    "group": "apik10.kasten.io",
+    "kind": "k10",
+    "rhmProductId": "3f0e7f41ab37b63d1cae302add4427ba",
+    "metrics": [
+      {
+        "metricId": "ACTIVE_USER",
+        "name": "Active user",
+        "pluralName": "Active users",
+        "abbreviation": "AU",
+        "suffix": "users",
+        "description": "Number of active users.",
+        "aggregationType": "current"
+      }
+    ]
+  }
