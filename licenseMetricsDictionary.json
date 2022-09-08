@@ -437,6 +437,10 @@
             "name": "Processor Core"
         },
         {
+            "metricId": "PVU_WARM_STANDBY",
+            "name": "PVU Warm Standby"
+        },
+        {
             "metricId": "PROCESSOR_DAY",
             "name": "Processor Day"
         },
